@@ -9,7 +9,7 @@ Things you may want to cover:
 * Rails version: 6.1.3.2
 
 After cloning, run these commands:
-bin/rails db:create
-bin/rails db:migrate
-bin/rails db:seed
+* bin/rails db:create
+* bin/rails db:migrate
+* bin/rails db:seed
 

@@ -1,0 +1,17 @@
+
+<ul class="col-lg-6 col-md-6 col-xs-6 order-edit-frm">
+  <%= form_for @order, url: order_path do |f| %>
+    <li>
+      <p>
+        <%= f.label :status %><br>
+        <%= f.select :status, Order.statuses.map{|k, v| [k.humanize, k]} %>
+      </p>
+      <div class="row">
+        <p class="col-lg-3 col-md-3 col-xs-6"><%= f.submit 'Submit' %></p>
+        <p class="col-lg-3 col-md-3 col-xs-6><%= f.submit 'Submit' %>
+          <%= link_to 'Cancel', orders_path %>
+        </p>
+      </div>
+    </li>
+  <% end %>
+</ul>
